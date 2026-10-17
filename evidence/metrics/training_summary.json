@@ -1,0 +1,46 @@
+{
+  "selection_rule": "highest mean stratified 5-fold CV ROC-AUC on training split",
+  "selected_model": "logistic_regression",
+  "runs": [
+    {
+      "model": "logistic_regression",
+      "run_id": "6b9dd16fc4a947f0b04a0487399b906d",
+      "metrics": {
+        "cv_accuracy_mean": 0.8139455782312925,
+        "cv_precision_mean": 0.8153732797466813,
+        "cv_recall_mean": 0.773913043478261,
+        "cv_roc_auc_mean": 0.8963053050009572,
+        "cv_accuracy_std": 0.02627571659650794,
+        "cv_precision_std": 0.04963371561252041,
+        "cv_recall_std": 0.07376864422005563,
+        "cv_roc_auc_std": 0.015769011709539687,
+        "test_accuracy": 0.8688524590163934,
+        "test_precision": 0.8125,
+        "test_recall": 0.9285714285714286,
+        "test_roc_auc": 0.9502164502164503
+      },
+      "cv_roc_auc_mean": 0.8963053050009572
+    },
+    {
+      "model": "random_forest",
+      "run_id": "5ac5335bb4284603a574427a4975ba0f",
+      "metrics": {
+        "cv_accuracy_mean": 0.7930272108843538,
+        "cv_precision_mean": 0.7895182072829131,
+        "cv_recall_mean": 0.7557312252964428,
+        "cv_roc_auc_mean": 0.8828361654448612,
+        "cv_accuracy_std": 0.04327283117879524,
+        "cv_precision_std": 0.06651132479555522,
+        "cv_recall_std": 0.08454941810886744,
+        "cv_roc_auc_std": 0.035066374982007556,
+        "test_accuracy": 0.9180327868852459,
+        "test_precision": 0.8709677419354839,
+        "test_recall": 0.9642857142857143,
+        "test_roc_auc": 0.9545454545454546
+      },
+      "cv_roc_auc_mean": 0.8828361654448612
+    }
+  ],
+  "final_model_fit": "selected pipeline refit on all rows for serving",
+  "warning": "Educational dataset only; not a clinically validated diagnostic system."
+}
