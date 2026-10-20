@@ -1,0 +1,4 @@
+CONTAINER ID   IMAGE                     COMMAND                  CREATED         STATUS                     PORTS                                         NAMES
+997529b43dc8   heart-disease-mlops:lab   "uvicorn api.main:ap…"   2 minutes ago   Up 2 minutes               0.0.0.0:8001->8000/tcp, [::]:8001->8000/tcp   heart-disease-api-lab
+2776f76e39a6   hello-world               "/hello"                 19 months ago   Exited (0) 19 months ago                                                 angry_banach
+46974f5efb40   hello-world               "/hello"                 19 months ago   Exited (0) 19 months ago                                                 gracious_kilby

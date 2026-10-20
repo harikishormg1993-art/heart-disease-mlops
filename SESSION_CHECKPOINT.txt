@@ -1,0 +1,52 @@
+BITS LAB MLOPS SESSION CHECKPOINT
+Date: 2026-10-19
+
+PROJECT
+Path: /home/s2025ae05963/workspace/heart-disease-mlops
+GitHub: https://github.com/harikishormg1993-art/heart-disease-mlops.git
+
+ENVIRONMENT
+Conda environment: heart-mlops
+Python: 3.11.17
+Dependencies: installed; pip check passed
+
+COMPLETED IN BITS LAB
+1. Cloned GitHub repository into persistent workspace.
+2. Ran data ingestion: 303 rows; class counts 164 and 139.
+3. Generated EDA summaries and figures.
+4. Trained Logistic Regression and Random Forest.
+5. Logistic Regression selected by mean CV ROC-AUC.
+6. Tests: 6 passed, 2 warnings.
+7. Ruff: all checks passed, configuration deprecation warning.
+8. FastAPI /predict, /health, /metrics verified.
+9. Saved evidence under evidence/lab/.
+10. Docker image heart-disease-mlops:lab built successfully.
+    Image size shown: approximately 976 MB.
+
+NEXT SESSION
+1. Open terminal.
+2. Run:
+   cd ~/workspace/heart-disease-mlops
+   conda activate heart-mlops
+3. Read this checkpoint.
+4. Check Docker image with:
+   docker images heart-disease-mlops
+5. Check whether the Docker daemon and image survived logout.
+6. Run the Docker container and verify its API on a separate host port.
+7. Save Docker verification evidence.
+8. Kubernetes is not yet verified in BITS Lab; kubectl was unavailable.
+9. Update the report after lab verification is complete.
+
+IMPORTANT
+Keep project files inside ~/workspace/heart-disease-mlops.
+Do not delete the workspace, artifacts, or evidence.
+
+BITS LAB DOCKER VERIFICATION — 2026-10-20
+- Docker image rebuilt after logout: heart-disease-mlops:lab
+- Container: heart-disease-api-lab
+- Host port 8001 mapped to container port 8000
+- POST /predict succeeded for synthetic input
+- GET /health returned status ok and model_loaded true after prediction
+- Docker evidence saved under evidence/lab/
+- Next: verify evidence files, check kubectl/Kubernetes availability,
+  update report and decide which fresh lab evidence to push to GitHub.

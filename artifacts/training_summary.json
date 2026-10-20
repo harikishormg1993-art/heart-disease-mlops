@@ -4,7 +4,7 @@
   "runs": [
     {
       "model": "logistic_regression",
-      "run_id": "6b9dd16fc4a947f0b04a0487399b906d",
+      "run_id": "b208e2af9b9445dfa719e60163114e2d",
       "metrics": {
         "cv_accuracy_mean": 0.8139455782312925,
         "cv_precision_mean": 0.8153732797466813,
@@ -23,7 +23,7 @@
     },
     {
       "model": "random_forest",
-      "run_id": "5ac5335bb4284603a574427a4975ba0f",
+      "run_id": "91824f94c1634c529785987ab4b945b0",
       "metrics": {
         "cv_accuracy_mean": 0.7930272108843538,
         "cv_precision_mean": 0.7895182072829131,

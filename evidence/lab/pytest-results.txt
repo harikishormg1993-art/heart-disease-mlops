@@ -1,0 +1,27 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.17, pytest-8.3.3, pluggy-1.7.0 -- /home/cloud/miniconda3/envs/heart-mlops/bin/python
+cachedir: .pytest_cache
+rootdir: /home/s2025ae05963/workspace/heart-disease-mlops
+configfile: pyproject.toml
+testpaths: tests
+plugins: anyio-4.15.1
+collecting ... collected 6 items
+
+tests/test_api.py::test_root_and_health PASSED                           [ 16%]
+tests/test_api.py::test_invalid_payload_is_rejected PASSED               [ 33%]
+tests/test_api.py::test_metrics_endpoint PASSED                          [ 50%]
+tests/test_data.py::test_binary_target_mapping PASSED                    [ 66%]
+tests/test_data.py::test_invalid_column_count_rejected PASSED            [ 83%]
+tests/test_pipeline.py::test_both_models_fit_and_predict PASSED          [100%]
+
+=============================== warnings summary ===============================
+../../../cloud/miniconda3/envs/heart-mlops/lib/python3.11/site-packages/starlette/testclient.py:40
+  /home/cloud/miniconda3/envs/heart-mlops/lib/python3.11/site-packages/starlette/testclient.py:40: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = typing.Callable[[], typing.ContextManager[anyio.abc.BlockingPortal]]
+
+tests/test_pipeline.py::test_both_models_fit_and_predict
+  /home/cloud/miniconda3/envs/heart-mlops/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:455: DeprecationWarning: scipy.optimize: The `disp` and `iprint` options of the L-BFGS-B solver are deprecated and will be removed in SciPy 1.18.0.
+    opt_res = optimize.minimize(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 6 passed, 2 warnings in 4.07s =========================
