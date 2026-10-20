@@ -1,0 +1,41 @@
+Name:                   heart-disease-api
+Namespace:              default
+CreationTimestamp:      Tue, 20 Oct 2026 10:07:30 +0530
+Labels:                 app=heart-disease-api
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=heart-disease-api
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  app=heart-disease-api
+  Containers:
+   api:
+    Image:      heart-disease-mlops:local
+    Port:       8000/TCP
+    Host Port:  0/TCP
+    Limits:
+      cpu:     500m
+      memory:  512Mi
+    Requests:
+      cpu:         100m
+      memory:      256Mi
+    Liveness:      http-get http://:8000/health delay=10s timeout=1s period=20s successThreshold=1 failureThreshold=3
+    Readiness:     http-get http://:8000/health delay=5s timeout=1s period=10s successThreshold=1 failureThreshold=3
+    Environment:   <none>
+    Mounts:        <none>
+  Volumes:         <none>
+  Node-Selectors:  <none>
+  Tolerations:     <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      True    MinimumReplicasAvailable
+  Progressing    True    NewReplicaSetAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   heart-disease-api-7c49f8fb58 (1/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  100s  deployment-controller  Scaled up replica set heart-disease-api-7c49f8fb58 from 0 to 1

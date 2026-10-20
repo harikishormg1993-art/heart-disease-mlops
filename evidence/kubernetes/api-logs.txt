@@ -1,0 +1,40 @@
+INFO:     Started server process [1]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-10-20 04:37:41,944 INFO request method=GET path=/health status=200 latency_seconds=0.001531
+INFO:     10.244.0.1:39730 - "GET /health HTTP/1.1" 200 OK
+2026-10-20 04:37:50,593 INFO request method=GET path=/health status=200 latency_seconds=0.000932
+INFO:     10.244.0.1:39740 - "GET /health HTTP/1.1" 200 OK
+2026-10-20 04:37:51,926 INFO request method=GET path=/health status=200 latency_seconds=0.000933
+INFO:     10.244.0.1:58474 - "GET /health HTTP/1.1" 200 OK
+2026-10-20 04:38:01,926 INFO request method=GET path=/health status=200 latency_seconds=0.001058
+INFO:     10.244.0.1:40844 - "GET /health HTTP/1.1" 200 OK
+2026-10-20 04:38:10,593 INFO request method=GET path=/health status=200 latency_seconds=0.000930
+INFO:     10.244.0.1:40846 - "GET /health HTTP/1.1" 200 OK
+2026-10-20 04:38:11,927 INFO request method=GET path=/health status=200 latency_seconds=0.001486
+INFO:     10.244.0.1:60044 - "GET /health HTTP/1.1" 200 OK
+2026-10-20 04:38:21,926 INFO request method=GET path=/health status=200 latency_seconds=0.000885
+INFO:     10.244.0.1:58408 - "GET /health HTTP/1.1" 200 OK
+2026-10-20 04:38:30,593 INFO request method=GET path=/health status=200 latency_seconds=0.000983
+INFO:     10.244.0.1:58422 - "GET /health HTTP/1.1" 200 OK
+2026-10-20 04:38:31,926 INFO request method=GET path=/health status=200 latency_seconds=0.000857
+INFO:     10.244.0.1:40238 - "GET /health HTTP/1.1" 200 OK
+2026-10-20 04:38:41,926 INFO request method=GET path=/health status=200 latency_seconds=0.001063
+INFO:     10.244.0.1:55258 - "GET /health HTTP/1.1" 200 OK
+2026-10-20 04:38:50,528 INFO request method=GET path=/health status=200 latency_seconds=0.000857
+INFO:     127.0.0.1:56332 - "GET /health HTTP/1.1" 200 OK
+2026-10-20 04:38:50,568 INFO request method=GET path=/metrics status=200 latency_seconds=0.002064
+INFO:     127.0.0.1:56342 - "GET /metrics HTTP/1.1" 200 OK
+2026-10-20 04:38:50,596 INFO request method=GET path=/openapi.json status=200 latency_seconds=0.008389
+INFO:     127.0.0.1:56352 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     10.244.0.1:55274 - "GET /health HTTP/1.1" 200 OK
+2026-10-20 04:38:50,598 INFO request method=GET path=/health status=200 latency_seconds=0.001111
+2026-10-20 04:38:51,925 INFO request method=GET path=/health status=200 latency_seconds=0.000821
+INFO:     10.244.0.1:50804 - "GET /health HTTP/1.1" 200 OK
+2026-10-20 04:39:02,046 INFO request method=GET path=/health status=200 latency_seconds=0.027939
+INFO:     10.244.0.1:49552 - "GET /health HTTP/1.1" 200 OK
+2026-10-20 04:39:04,324 INFO request method=POST path=/predict status=200 latency_seconds=2.806534
+INFO:     127.0.0.1:59580 - "POST /predict HTTP/1.1" 200 OK
+2026-10-20 04:39:10,592 INFO request method=GET path=/health status=200 latency_seconds=0.001002
+INFO:     10.244.0.1:49566 - "GET /health HTTP/1.1" 200 OK

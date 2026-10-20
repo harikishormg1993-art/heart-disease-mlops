@@ -1,0 +1,2 @@
+{"prediction":0,"label":"disease_absent","model_estimated_probability":{"disease_absent":0.956671322634693,"disease_present":0.043328677365306975},"disclaimer":"Educational output only; not medical advice or a diagnosis."}
+HTTP_STATUS=200

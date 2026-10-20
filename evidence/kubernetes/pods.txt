@@ -1,0 +1,2 @@
+NAME                                 READY   STATUS    RESTARTS   AGE    IP           NODE                        NOMINATED NODE   READINESS GATES
+heart-disease-api-7c49f8fb58-fws2n   1/1     Running   0          100s   10.244.0.5   heart-mlops-control-plane   <none>           <none>
